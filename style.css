@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+    font-family: 'montserrat';
+}
+a {
+    text-decoration: none;
+}
+.container {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+/* hero section sart */
+
+#hero {
+    background-image: url("./img/home-office.jpg");
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    z-index: 1;
+}
+
+#hero .hero {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 auto;
+    display: flex;
+    justify-content: start;
+}
+
+#hero::after {
+    content: '';
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: .7;
+    z-index: -1;
+}
+
+#hero h1 {
+    display: block;
+    width: fit-content;
+    position: relative;
+    font-size: 4rem;
+    color: white;
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 30px;
+    background-color: transparent;
+    color: #8C7873;
+    border: 2px solid #8C7873;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+
+}
+
+/* hero section end */
